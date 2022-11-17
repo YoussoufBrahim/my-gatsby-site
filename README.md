@@ -68,3 +68,15 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
   ou
   npm run develop
   ```
+
+- Changer node avec nvm
+
+  ```shell
+  source ~/.bash_profile
+  ```
+
+  - Installation des plugins
+
+  ```shell
+  npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem
+  ```
