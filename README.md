@@ -86,12 +86,20 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
   - `gatsby-source-filesystem`crée des nœuds de fichier.
 
-Un plugin de transformateur convertit les nœuds d'un type à un autre. Par exemple, le gatsby-plugin-mdxplugin transforme les nœuds File qui ont l' .mdxextension en nœuds MDX, qui ont un ensemble différent de champs que vous pouvez interroger à l'aide de GraphQL
+Un plugin de transformateur convertit les nœuds d'un type à un autre. Par exemple, le `gatsby-plugin-mdxplugin `transforme les nœuds File qui ont l' .mdxextension en nœuds MDX, qui ont un ensemble différent de champs que vous pouvez interroger à l'aide de GraphQL
 
 Le gatsby-plugin-mdxplugin fournit les champs allMdxet mdxpour vos requêtes GraphQL.
 
 - L'API File System Route de Gatsby vous permet de créer dynamiquement de nouvelles pages à partir de nœuds de couche de données en nommant vos fichiers avec une syntaxe spéciale.
 
-  - Les routes du système de fichiers ne fonctionnent que sur les fichiers du src/pagesrépertoire (ou des sous-répertoires).
+  - Les routes du système de fichiers ne fonctionnent que sur les fichiers du `src/pagesrépertoire` (ou des `sous-répertoires`).
 
-  - Pour créer une nouvelle route de collecte, vous nommez votre fichier {nodeType.field}.js, où nodeTypeest le type de nœud à partir duquel vous souhaitez créer des pages, et fieldest le champ de données de ce type de nœud que vous souhaitez utiliser dans l'URL de cette page.
+  - Pour créer une nouvelle route de collecte, vous nommez votre fichier `{nodeType.field}.js`, où nodeTypeest le type de nœud à partir duquel vous souhaitez créer des pages, et fieldest le champ de données de ce type de nœud que vous souhaitez utiliser dans l'URL de cette page.
+
+    7.1 - Utilisez un site Web comme `Unsplash` pour trouver de jolies images librement utilisables. Pour de meilleurs résultats, choisissez des photos avec une orientation paysage (horizontale), car elles s'adapteront plus facilement à votre écran.
+
+    7.2 - Installer et configurer `gatsby-transformer-sharp` - gatsby-transformer-sharpplugin recherche tous les Filenœuds qui se terminent par une extension d'image (comme .pngou .jpg) et crée un ImageSharpnœud pour ce fichier.
+
+  ```
+  npm install gatsby-transformer-sharp
+  ```
