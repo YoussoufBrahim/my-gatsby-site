@@ -1,4 +1,4 @@
-import { useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 const Seo = ({ title }) => {
   const data = useStaticQuery(graphql`
