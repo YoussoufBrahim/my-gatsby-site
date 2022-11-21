@@ -89,3 +89,9 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 Un plugin de transformateur convertit les nœuds d'un type à un autre. Par exemple, le gatsby-plugin-mdxplugin transforme les nœuds File qui ont l' .mdxextension en nœuds MDX, qui ont un ensemble différent de champs que vous pouvez interroger à l'aide de GraphQL
 
 Le gatsby-plugin-mdxplugin fournit les champs allMdxet mdxpour vos requêtes GraphQL.
+
+- L'API File System Route de Gatsby vous permet de créer dynamiquement de nouvelles pages à partir de nœuds de couche de données en nommant vos fichiers avec une syntaxe spéciale.
+
+  - Les routes du système de fichiers ne fonctionnent que sur les fichiers du src/pagesrépertoire (ou des sous-répertoires).
+
+  - Pour créer une nouvelle route de collecte, vous nommez votre fichier {nodeType.field}.js, où nodeTypeest le type de nœud à partir duquel vous souhaitez créer des pages, et fieldest le champ de données de ce type de nœud que vous souhaitez utiliser dans l'URL de cette page.
