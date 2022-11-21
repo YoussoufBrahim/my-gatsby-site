@@ -80,3 +80,6 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
   ```shell
   npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem
   ```
+
+  - Extraction de données dans des composants de base avec
+    `useStaticQuery`
