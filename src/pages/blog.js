@@ -7,19 +7,36 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Ma Blog Posts">
       <p>Je suis la page Blog.</p>
-      <ul>
-        {data.allFile.nodes.map((node) => (
-          <li key={node.name}>{node.name}</li>
-        ))}
-      </ul>
+
+      {data.allMdx.nodes.map((node) => (
+        <article key={node.key}>
+          <h2>{node.frontmatter.title}</h2>
+          <p>date : {node.frontmatter.date}</p>
+          <p>{node.excerpt}</p>
+          <ul>
+            <li>Name file : {node.parent.name}</li>
+          </ul>
+        </article>
+      ))}
     </Layout>
   );
 };
-export const data = graphql`
+export const query = graphql`
   query {
-    allFile {
+    allMdx {
       nodes {
-        name
+        frontmatter {
+          date(formatString: "MMM D, YYYY")
+          title
+        }
+        id
+        excerpt
+        parent {
+          ... on File {
+            name
+            id
+          }
+        }
       }
     }
   }

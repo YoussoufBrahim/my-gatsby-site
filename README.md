@@ -83,3 +83,9 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
   - Extraction de données dans des composants de base avec
     `useStaticQuery`
+
+  - `gatsby-source-filesystem`crée des nœuds de fichier.
+
+Un plugin de transformateur convertit les nœuds d'un type à un autre. Par exemple, le gatsby-plugin-mdxplugin transforme les nœuds File qui ont l' .mdxextension en nœuds MDX, qui ont un ensemble différent de champs que vous pouvez interroger à l'aide de GraphQL
+
+Le gatsby-plugin-mdxplugin fournit les champs allMdxet mdxpour vos requêtes GraphQL.
